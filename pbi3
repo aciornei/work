@@ -1,1 +1,0 @@
-grep -Rni "X-Frame-Options\|Frame-Options\|Content-Security-Policy\|frame-ancestors" /etc/apache2
