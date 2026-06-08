@@ -1,0 +1,1 @@
+apt purge apache2 apache2-utils apache2-bin apache2-data
