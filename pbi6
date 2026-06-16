@@ -1,0 +1,10 @@
+select id, directory_name, directory_type
+from cwd_directory;
+
+
+select u.user_name, g.group_name
+from cwd_membership m
+join cwd_user u on m.child_name = u.lower_user_name
+join cwd_group g on m.parent_name = g.lower_group_name
+where u.directory_id = ID_LDAP1
+  and g.local = 1;
