@@ -1,3 +1,19 @@
+curl -s 'http://127.0.0.1:8081/fpm-status?json&full' |
+jq -r '
+.processes[]
+| select(.state != "Idle")
+| [
+    .pid,
+    ."request duration",
+    ."request method",
+    ."request uri",
+    .script
+  ]
+| @tsv
+' |
+sort -k2,2nr |
+head -40
+
 sudo nano /etc/nginx/sites-available/phpfpm-status.conf
 
 
