@@ -1,0 +1,45 @@
+cd /usr/local/src/vm-doc-server-source
+
+PID=$(systemctl show -p MainPID --value vm-doc-collector)
+
+echo "PID=$PID"
+readlink -f /proc/$PID/exe
+
+sha256sum \
+  bin/vm-doc-collector \
+  /opt/vm-doc-server/bin/vm-doc-collector \
+  /proc/$PID/exe
+
+
+strings /proc/$PID/exe |
+grep -F 'interpolateParams=true' ||
+echo "ATENTIE: collectorul nu contine modificarea"
+
+SELECT
+    id,
+    status,
+    error_code,
+    error_message,
+    created_at,
+    finished_at
+FROM collection_jobs
+ORDER BY id DESC
+LIMIT 5;
+
+SELECT VERSION(), @@sql_mode;
+
+SHOW TRIGGERS LIKE 'inventory_snapshots';
+
+PREPARE vmtest FROM
+'SELECT id FROM inventory_snapshots WHERE collection_job_id=?';
+
+SET @job_id = (
+    SELECT MAX(id)
+    FROM collection_jobs
+);
+
+EXECUTE vmtest USING @job_id;
+
+DEALLOCATE PREPARE vmtest;
+
+
