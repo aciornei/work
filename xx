@@ -1,0 +1,38 @@
+MYSQL_PWD="$DB_PASS" mariadb \
+  -h 127.0.0.1 \
+  -u vm_doc \
+  vm_doc \
+  -e "SELECT DATABASE() AS database_name, NOW() AS server_time;"
+
+install -d -o root -g vm-doc -m 0750 /etc/vm-doc-server
+install -d -o root -g vm-doc -m 0750 /etc/vm-doc-server/ca
+
+umask 027
+openssl rand -base64 48 > /etc/vm-doc-server/master.key
+chown root:vm-doc /etc/vm-doc-server/master.key
+chmod 0640 /etc/vm-doc-server/master.key
+
+ls -l /etc/vm-doc-server/master.key
+
+cat > /tmp/vm-doc-secrets.yaml <<EOF
+database_password: "${DB_PASS}"
+ldap_bind_dn: ""
+ldap_bind_password: ""
+oidc_client_secret: ""
+EOF
+
+chmod 0600 /tmp/vm-doc-secrets.yaml
+
+/opt/vm-doc-server/bin/vm-doc-encrypt-secrets \
+  -in /tmp/vm-doc-secrets.yaml \
+  -out /etc/vm-doc-server/secrets.enc \
+  -key /etc/vm-doc-server/master.key
+
+chown root:vm-doc /etc/vm-doc-server/secrets.enc
+chmod 0640 /etc/vm-doc-server/secrets.enc
+
+shred -u /tmp/vm-doc-secrets.yaml
+
+head -c 20 /etc/vm-doc-server/secrets.enc
+echo
+
