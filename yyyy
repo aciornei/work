@@ -1,0 +1,28 @@
+cd /usr/local/src/vm-doc-server-source
+
+cp -a internal/database/database.go \
+      internal/database/database.go.bak
+
+sed -i 's/multiStatements=true"/multiStatements=true\&interpolateParams=true"/' \
+    internal/database/database.go
+
+grep -n 'dsn :=' internal/database/database.go
+
+
+if [ -d vendor ]; then
+    GOFLAGS=-mod=vendor make all
+else
+    make all
+fi
+
+
+
+sudo systemctl stop vm-doc-collector vm-doc-server
+
+sudo install -m 0755 bin/vm-doc-server \
+    /opt/vm-doc-server/bin/vm-doc-server
+
+sudo install -m 0755 bin/vm-doc-collector \
+    /opt/vm-doc-server/bin/vm-doc-collector
+
+sudo systemctl start vm-doc-server vm-doc-collector
