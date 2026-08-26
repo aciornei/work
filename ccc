@@ -1,0 +1,37 @@
+python3 - <<'PY'
+from pathlib import Path
+
+path = Path("internal/server/server.go")
+text = path.read_text()
+
+old = '''\
+\tresult, err := a.Registration.Register(r.Context(), in, resolvedClientIP(r, a.Config.Server.TrustedProxies))
+\tif err == nil && a.Logger != nil {
+\t\ta.Logger.Info("agent registered", "agent_id", result.AgentID, "vm_id", result.VMID, "created", result.Created, "linked", result.Linked)
+\t}
+\trespondStatus(w, result, err, http.StatusOK)
+'''
+
+new = '''\
+\tremoteIP := resolvedClientIP(r, a.Config.Server.TrustedProxies)
+\tresult, err := a.Registration.Register(r.Context(), in, remoteIP)
+\tif err != nil && a.Logger != nil {
+\t\ta.Logger.Error("agent registration failed",
+\t\t\t"error", err,
+\t\t\t"remote_ip", remoteIP,
+\t\t\t"agent_uuid", in.Agent.ID,
+\t\t\t"hostname", in.Host.Hostname,
+\t\t)
+\t}
+\tif err == nil && a.Logger != nil {
+\t\ta.Logger.Info("agent registered", "agent_id", result.AgentID, "vm_id", result.VMID, "created", result.Created, "linked", result.Linked)
+\t}
+\trespondStatus(w, result, err, http.StatusOK)
+'''
+
+if old not in text:
+    raise SystemExit("Blocul registerAgent nu a fost găsit; nu am modificat fișierul.")
+
+path.write_text(text.replace(old, new, 1))
+print("Logarea erorii de înregistrare a fost adăugată.")
+PY
