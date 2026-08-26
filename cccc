@@ -1,0 +1,50 @@
+mysql "$DB_NAME" -e "
+SELECT version, applied_at
+FROM schema_migrations
+WHERE version='010_agent_registration.up.sql';
+"
+
+mysql "$DB_NAME" -e "
+SELECT COLUMN_NAME
+FROM information_schema.COLUMNS
+WHERE TABLE_SCHEMA='${DB_NAME}'
+  AND TABLE_NAME='agents'
+  AND COLUMN_NAME IN (
+    'registration_source',
+    'registered_at',
+    'last_heartbeat_at',
+    'agent_version',
+    'host_hostname',
+    'host_fqdn',
+    'product_uuid',
+    'product_uuid_legacy',
+    'machine_id',
+    'last_advertised_ip',
+    'last_registration_ip'
+  )
+ORDER BY ORDINAL_POSITION;
+"
+
+
+
+
+mysql "$DB_NAME" -e "
+SELECT COLUMN_NAME
+FROM information_schema.COLUMNS
+WHERE TABLE_SCHEMA='${DB_NAME}'
+  AND TABLE_NAME='agents'
+  AND COLUMN_NAME IN (
+    'registration_source',
+    'registered_at',
+    'last_heartbeat_at',
+    'agent_version',
+    'host_hostname',
+    'host_fqdn',
+    'product_uuid',
+    'product_uuid_legacy',
+    'machine_id',
+    'last_advertised_ip',
+    'last_registration_ip'
+  )
+ORDER BY ORDINAL_POSITION;
+"
