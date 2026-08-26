@@ -1,0 +1,7 @@
+sed -i \
+  's#mux.Handle(docsPrefix, a.protected("", docs))#mux.Handle("GET "+docsPrefix, a.protected("", docs))#' \
+  internal/server/server.go
+
+sed -i \
+  's#mux.Handle(docsPath, a.protected("", http.RedirectHandler(docsPrefix, http.StatusMovedPermanently)))#mux.Handle("GET "+docsPath, a.protected("", http.RedirectHandler(docsPrefix, http.StatusMovedPermanently)))#' \
+  internal/server/server.go
