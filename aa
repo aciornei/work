@@ -1,8 +1,0 @@
-sudo find /root /etc/vm-doc-server /usr/local/src \
-  -maxdepth 5 -type f \
-  \( -iname 'secrets*.yaml' -o -iname 'secrets*.yml' -o -iname '*secret*.yaml' \) \
-  2>/dev/null
-
-sudo grep -nE \
-  '^(collector:|vcenter:|agent_registration:|  allow_http:|  max_request_body_bytes:)' \
-  /etc/vm-doc-server/config.yaml
