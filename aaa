@@ -1,6 +1,0 @@
-grep -q '^agent_registration:' /etc/vm-doc-server/config.yaml || cat >> /etc/vm-doc-server/config.yaml <<'EOF'
-
-agent_registration:
-  enabled: true
-  max_request_body_bytes: 26214400
-EOF
