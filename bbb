@@ -1,0 +1,12 @@
+grep -n '^agent_registration_token:' \
+  /root/vm-doc-secrets-0.2.2.yaml |
+  sed 's/: .*/: ***ascuns***/'
+
+GOPROXY=off GOFLAGS=-mod=vendor \
+go run ./tools/encrypt-secrets \
+  -in /root/vm-doc-secrets-0.2.2.yaml \
+  -out /etc/vm-doc-server/secrets.enc.new \
+  -key /etc/vm-doc-server/master.key
+
+head -c 3 /etc/vm-doc-server/secrets.enc.new
+echo
