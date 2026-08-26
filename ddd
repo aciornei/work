@@ -1,0 +1,25 @@
+python3 - <<'PY'
+from pathlib import Path
+
+path = Path("internal/registration/registration.go")
+text = path.read_text()
+
+old_sql = """'auto',?,?,?,?,?,?,?,?,?)`,"""
+new_sql = """'auto',?,?,?,?,?,?,?,?,?,?)`,"""
+
+if old_sql not in text:
+    raise SystemExit("Nu am găsit șirul SQL așteptat.")
+
+text = text.replace(old_sql, new_sql, 1)
+
+old_args = """int(offlineAfter.Seconds()), now, now, now, in.Agent.Version,"""
+new_args = """int(offlineAfter.Seconds()), now, now, now, now, in.Agent.Version,"""
+
+if old_args not in text:
+    raise SystemExit("Nu am găsit lista de argumente așteptată.")
+
+text = text.replace(old_args, new_args, 1)
+
+path.write_text(text)
+print("registration.go reparat")
+PY

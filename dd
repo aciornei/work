@@ -1,9 +1,0 @@
-journalctl -u vm-doc-server -n 200 \
-  --no-pager -o cat |
-  grep 'agent registration failed' |
-  tail -1
-
-  journalctl -u vm-doc-server --since "10 minutes ago" \
-  --no-pager -o json |
-  grep -o '"MESSAGE":[^}]*' |
-  grep 'agent registration failed'
