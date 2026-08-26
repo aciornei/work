@@ -1,0 +1,11 @@
+GOPROXY=off GOFLAGS=-mod=vendor \
+go run ./tools/decrypt-secrets \
+  -in /etc/vm-doc-server/secrets.enc \
+  -out /root/vm-doc-secrets-verify.yaml \
+  -key /etc/vm-doc-server/master.key
+
+cmp -s \
+  /root/vm-doc-secrets-0.2.2.yaml \
+  /root/vm-doc-secrets-verify.yaml \
+  && echo "secrets.enc verificat: OK" \
+  || echo "EROARE la verificarea secrets.enc"
