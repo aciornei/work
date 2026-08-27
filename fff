@@ -1,6 +1,7 @@
-openssl s_client \
-  -connect DC1.domeniu.ro:636 \
-  -servername DC1.domeniu.ro \
-  -CAfile /etc/vm-doc-server/ca/ldap-ca.pem \
-  </dev/null 2>/dev/null |
-grep 'Verify return code'
+ldapsearch -x \
+  -H ldaps://DC1.domeniu.ro:636 \
+  -D 'appadmin@domeniu.ro' \
+  -W \
+  -b 'DC=domeniu,DC=ro' \
+  '(&(objectCategory=person)(objectClass=user)(sAMAccountName=UTILIZATOR_TEST))' \
+  sAMAccountName displayName mail memberOf
