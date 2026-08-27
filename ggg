@@ -1,0 +1,18 @@
+auth:
+  ldap:
+    enabled: true
+    # restul configurației LDAP rămâne neschimbat
+
+  oidc:
+    enabled: true
+    issuer_url: "https://keycloak.domeniu.ro/realms/AD"
+    client_id: "vm-doc-server"
+    scopes:
+      - "profile"
+      - "email"
+      - "groups"
+    username_claim: "preferred_username"
+    groups_claim: "groups"
+
+  dev:
+    enabled: false
