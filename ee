@@ -1,0 +1,46 @@
+mysql vm_doc -e "
+SELECT
+  id,
+  agent_id,
+  status,
+  error_code,
+  error_message,
+  created_at
+FROM collection_jobs
+WHERE source='push'
+ORDER BY id DESC
+LIMIT 5\G
+"
+
+journalctl -u vm-doc-server \
+  --since "10 minutes ago" \
+  --no-pager -o cat |
+grep -E 'agent inventory push failed|error=' |
+tail -20
+
+
+systemctl show vm-doc-server -p ExecStart --no-pager
+
+strings /opt/vm-doc-server/bin/vm-doc-server |
+grep -F 'payload_bytes'
+
+
+cd /usr/local/src/vm-doc-server-0.2.2
+
+GOPROXY=off GOFLAGS=-mod=vendor make build
+
+systemctl stop vm-doc-server
+
+install -m 0755 \
+  bin/vm-doc-server \
+  /opt/vm-doc-server/bin/vm-doc-server
+
+systemctl start vm-doc-server
+systemctl restart vm-doc-agent
+
+
+journalctl -u vm-doc-server \
+  --since "2 minutes ago" \
+  --no-pager -o cat |
+grep 'agent inventory push failed' |
+tail -1
