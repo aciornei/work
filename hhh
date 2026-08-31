@@ -1,0 +1,28 @@
+
+cd /usr/local/src/vm-doc-server-0.3.2
+
+python3 - <<'PY'
+from pathlib import Path
+
+path = Path("internal/vcenter/metadata.go")
+text = path.read_text()
+
+text = text.replace(
+    "nullableInt64(serviceAssignment.LayerID)",
+    "nullableInt64Ptr(serviceAssignment.LayerID)",
+)
+
+text = text.replace(
+    "nullableInt64(serviceAssignment.TechnicalRoleID)",
+    "nullableInt64Ptr(serviceAssignment.TechnicalRoleID)",
+)
+
+text = text.replace(
+    "func nullableInt64(value *int64) any {",
+    "func nullableInt64Ptr(value *int64) any {",
+)
+
+path.write_text(text)
+PY
+
+gofmt -w internal/vcenter/metadata.go
