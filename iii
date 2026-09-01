@@ -1,0 +1,16 @@
+| Cod            | Denumire afișată            | Exemple de roluri tehnice                      |
+| -------------- | --------------------------- | ---------------------------------------------- |
+| `ACCESS`       | Acces și publicare          | Nginx, HAProxy, reverse proxy, load balancer   |
+| `PRESENTATION` | Prezentare / interfață      | Web UI, frontend, Roundcube                    |
+| `APPLICATION`  | Aplicație                   | Metabase, Keycloak, Alfresco Repository        |
+| `API`          | API și backend              | REST API, backend application, web services    |
+| `INTEGRATION`  | Integrare                   | conector LDAP, gateway, ETL, integrare externă |
+| `DATA`         | Bază de date                | PostgreSQL, MariaDB, SQL Server                |
+| `CACHE`        | Cache și sesiuni            | Redis Cache, Redis Sessions, Memcached         |
+| `MESSAGING`    | Mesagerie și transport      | Postfix, RabbitMQ, Kafka, Redis Broker         |
+| `SEARCH`       | Căutare și indexare         | Solr, OpenSearch, Elasticsearch                |
+| `STORAGE`      | Stocare                     | NFS, MinIO, S3, content store, file storage    |
+| `PROCESSING`   | Procesare și joburi         | worker, scheduler, Celery, batch               |
+| `MONITORING`   | Monitorizare                | Prometheus, Grafana, Graylog, Sentry           |
+| `IDENTITY`     | Identitate și autentificare | Keycloak, LDAP, SSO                            |
+| `SECURITY`     | Securitate                  | Vault, antivirus, certificate, scanner         |
