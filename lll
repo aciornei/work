@@ -1,0 +1,604 @@
+1. Aplicații de business
+   Cod domeniu: app
+   Descriere: Aplicații utilizate pentru activități administrative, operaționale sau specifice organizației. Exemple: aplicații medicale, registratură, managementul proiectelor, instruire și portaluri interne.
+
+   1.1 Aplicații administrative
+       Cod: app_admin
+       Descriere: Aplicații pentru activități administrative interne, precum registratură, resurse umane, achiziții, contabilitate, evidență și management financiar.
+
+   1.2 Aplicații operaționale
+       Cod: app_operations
+       Descriere: Aplicații utilizate direct în procesele operaționale curente ale organizației. Exemple: aplicații de dispecerizare, evidența activităților și management operațional.
+
+   1.3 Aplicații specializate
+       Cod: app_specialized
+       Descriere: Aplicații dezvoltate sau configurate pentru un domeniu specific de activitate. Exemple: aplicații medicale, tehnice, radio sau aplicații proprii organizației.
+
+   1.4 Managementul proiectelor
+       Cod: app_project
+       Descriere: Servicii pentru planificarea, urmărirea și raportarea activităților din proiecte. Exemple: Jira, OpenProject și Redmine.
+
+   1.5 Învățare și instruire
+       Cod: app_learning
+       Descriere: Platforme pentru administrarea cursurilor, materialelor educaționale, utilizatorilor și evaluărilor. Exemple: ILIAS și Moodle.
+
+   1.6 Portaluri și aplicații web
+       Cod: app_portal
+       Descriere: Portaluri interne sau externe care oferă acces centralizat la informații și funcționalități. Exemple: portaluri instituționale, intranet și aplicații self-service.
+
+   1.7 Aplicații mobile
+       Cod: app_mobile
+       Descriere: Aplicații și servicii destinate dispozitivelor mobile. Exemple: aplicații Android, iOS și servicii backend pentru aplicații mobile.
+
+
+2. Integrare, automatizare și DevOps
+   Cod domeniu: devops
+   Descriere: Servicii pentru integrarea aplicațiilor, automatizarea operațiunilor, administrarea codului și orchestrarea fluxurilor tehnice. Exemple: Kestra, Airflow, Ansible, Jenkins și GitLab.
+
+   2.1 Integrare aplicații și API
+       Cod: devops_integration
+       Descriere: Servicii care permit schimbul de date și funcționalități între aplicații. Exemple: API Gateway, REST API, SOAP, webhook-uri și middleware.
+
+   2.2 Automatizare infrastructură
+       Cod: devops_automation
+       Descriere: Servicii pentru configurarea și administrarea automată a serverelor și infrastructurii. Exemple: Ansible, Terraform și PowerShell Automation.
+
+   2.3 Orchestrare fluxuri
+       Cod: devops_orchestration
+       Descriere: Platforme pentru executarea și coordonarea fluxurilor de lucru formate din mai multe operații. Exemple: Kestra, Apache Airflow și Rundeck.
+
+   2.4 Integrare și livrare continuă
+       Cod: devops_cicd
+       Descriere: Servicii pentru compilarea, testarea și publicarea automată a aplicațiilor. Exemple: GitLab CI/CD, Jenkins, GitHub Actions și Azure DevOps.
+
+   2.5 Managementul configurațiilor
+       Cod: devops_configuration
+       Descriere: Servicii pentru definirea, distribuirea și menținerea configurațiilor tehnice. Exemple: Ansible, Puppet, Chef și SaltStack.
+
+   2.6 Procesare batch și joburi programate
+       Cod: devops_batch
+       Descriere: Servicii pentru executarea automată a operațiilor periodice sau de volum mare. Exemple: cron, Windows Task Scheduler, Kestra și scripturi programate.
+
+   2.7 Managementul codului sursă
+       Cod: devops_scm
+       Descriere: Servicii pentru stocarea, versionarea și colaborarea asupra codului sursă. Exemple: GitLab, GitHub, Gitea și Bitbucket.
+
+
+3. Date, analiză și inteligență artificială
+   Cod domeniu: data
+   Descriere: Servicii pentru colectarea, transformarea, analiza și valorificarea datelor. Exemple: Metabase, Power BI, Data Warehouse, Data Lake și modele de inteligență artificială.
+
+   3.1 Managementul datelor
+       Cod: data_management
+       Descriere: Servicii pentru organizarea, administrarea și întreținerea seturilor de date pe durata ciclului lor de viață.
+
+   3.2 Integrare și transformare date
+       Cod: data_integration
+       Descriere: Servicii pentru extragerea, transformarea și transferul datelor între sisteme. Exemple: ETL, ELT, sincronizări și importuri automate.
+
+   3.3 Business Intelligence
+       Cod: data_bi
+       Descriere: Platforme pentru explorarea datelor și realizarea de tablouri de bord. Exemple: Metabase, Power BI și Tableau.
+
+   3.4 Raportare și analiză
+       Cod: data_reporting
+       Descriere: Servicii pentru generarea rapoartelor operaționale, statistice și manageriale. Exemple: rapoarte periodice, dashboard-uri și exporturi centralizate.
+
+   3.5 Servicii de inteligență artificială
+       Cod: data_ai
+       Descriere: Servicii care utilizează modele de inteligență artificială pentru analiză, clasificare, generare sau automatizare. Exemple: modele locale, chatbot-uri și analiză predictivă.
+
+   3.6 Data Warehouse și Data Lake
+       Cod: data_warehouse
+       Descriere: Platforme centralizate pentru stocarea și analiza volumelor mari de date istorice, agregate sau neprocesate.
+
+   3.7 Guvernanța și calitatea datelor
+       Cod: data_governance
+       Descriere: Servicii pentru definirea responsabilităților, regulilor de calitate, clasificării și utilizării controlate a datelor.
+
+
+4. Baze de date
+   Cod domeniu: db
+   Descriere: Servicii pentru stocarea, interogarea și administrarea datelor aplicațiilor. Exemple: PostgreSQL, MariaDB, Microsoft SQL Server, Oracle, MongoDB și Redis.
+
+   4.1 Baze de date relaționale
+       Cod: db_relational
+       Descriere: Sisteme care stochează date structurate în tabele și relații. Exemple: PostgreSQL, MariaDB, MySQL, Oracle și Microsoft SQL Server.
+
+   4.2 Baze de date NoSQL
+       Cod: db_nosql
+       Descriere: Sisteme de baze de date pentru documente, coloane, grafuri sau alte structuri nerelaționale. Exemple: MongoDB, Cassandra și Elasticsearch.
+
+   4.3 Cache și stocare cheie-valoare
+       Cod: db_cache
+       Descriere: Servicii rapide pentru cache, sesiuni și stocarea datelor sub formă de cheie-valoare. Exemple: Redis și Memcached.
+
+   4.4 Administrarea bazelor de date
+       Cod: db_administration
+       Descriere: Servicii pentru instalarea, configurarea, monitorizarea, actualizarea și optimizarea bazelor de date.
+
+   4.5 Replicare și disponibilitate ridicată
+       Cod: db_high_availability
+       Descriere: Servicii care asigură redundanța și continuitatea bazelor de date. Exemple: clustering, replicare, failover și instanțe secundare.
+
+   4.6 Migrare și conversie baze de date
+       Cod: db_migration
+       Descriere: Servicii pentru transferul datelor între versiuni, servere sau tehnologii diferite de baze de date.
+
+   4.7 Baze de date geospațiale
+       Cod: db_geospatial
+       Descriere: Baze de date configurate pentru stocarea și interogarea informațiilor geografice. Exemple: PostgreSQL cu PostGIS și Oracle Spatial.
+
+
+5. Infrastructură de calcul
+   Cod domeniu: compute
+   Descriere: Servicii care furnizează sistemele de operare și resursele de calcul necesare aplicațiilor. Exemple: servere Linux, Windows Server, servere fizice și imagini standardizate.
+
+   5.1 Servere Linux
+       Cod: compute_linux
+       Descriere: Sisteme de operare Linux utilizate pentru rularea aplicațiilor și serviciilor. Exemple: Ubuntu, Debian, Red Hat, SUSE și CentOS.
+
+   5.2 Servere Windows
+       Cod: compute_windows
+       Descriere: Sisteme Windows Server utilizate pentru aplicații, servicii de infrastructură și administrare centralizată.
+
+   5.3 Servere fizice
+       Cod: compute_physical
+       Descriere: Echipamente fizice de calcul utilizate pentru găzduirea directă a aplicațiilor sau a platformelor de virtualizare.
+
+   5.4 Template-uri și imagini de sistem
+       Cod: compute_templates
+       Descriere: Imagini standardizate utilizate pentru instalarea sau provisionarea rapidă a serverelor și mașinilor virtuale.
+
+   5.5 Provisionare servere
+       Cod: compute_provisioning
+       Descriere: Servicii pentru crearea și configurarea inițială a serverelor fizice sau virtuale.
+
+   5.6 Actualizare și patch management
+       Cod: compute_patching
+       Descriere: Servicii pentru distribuirea, instalarea și verificarea actualizărilor de sistem și de securitate.
+
+   5.7 Servicii de sistem
+       Cod: compute_system
+       Descriere: Servicii tehnice comune sistemelor de operare. Exemple: NTP, syslog, cron, systemd, SSH și servicii de actualizare.
+
+
+6. Virtualizare și containere
+   Cod domeniu: virt
+   Descriere: Platforme pentru rularea și administrarea mașinilor virtuale, containerelor și aplicațiilor izolate. Exemple: VMware, Hyper-V, Docker și Kubernetes.
+
+   6.1 Virtualizare VMware
+       Cod: virt_vmware
+       Descriere: Servicii pentru administrarea infrastructurii virtuale VMware. Exemple: vCenter, ESXi, vSphere și clustere VMware.
+
+   6.2 Virtualizare Hyper-V
+       Cod: virt_hyperv
+       Descriere: Servicii pentru administrarea mașinilor virtuale și clusterelor Microsoft Hyper-V.
+
+   6.3 Alte platforme de virtualizare
+       Cod: virt_other
+       Descriere: Servicii bazate pe alte tehnologii de virtualizare. Exemple: KVM, Proxmox, Xen și Nutanix AHV.
+
+   6.4 Platforme de containere
+       Cod: virt_containers
+       Descriere: Servicii pentru crearea și rularea containerelor. Exemple: Docker, Podman și containerd.
+
+   6.5 Orchestrare containere
+       Cod: virt_orchestration
+       Descriere: Platforme pentru administrarea automată a containerelor la nivel de cluster. Exemple: Kubernetes, OpenShift și Rancher.
+
+   6.6 Registry de imagini
+       Cod: virt_registry
+       Descriere: Servicii pentru stocarea și distribuirea imaginilor de containere. Exemple: Harbor, GitLab Container Registry și Docker Registry.
+
+   6.7 Platforme de aplicații
+       Cod: virt_paas
+       Descriere: Platforme care oferă un mediu standardizat pentru publicarea și rularea aplicațiilor fără administrarea directă a infrastructurii.
+
+
+7. Stocare, backup și recuperare
+   Cod domeniu: storage
+   Descriere: Servicii pentru stocarea, protejarea, arhivarea și recuperarea datelor. Exemple: Veeam, MinIO, NAS, SAN, NFS și S3.
+
+   7.1 Stocare bloc
+       Cod: storage_block
+       Descriere: Stocare prezentată sistemelor sub formă de volume sau discuri. Exemple: SAN, iSCSI și Fibre Channel.
+
+   7.2 Stocare fișiere
+       Cod: storage_file
+       Descriere: Servicii pentru stocarea și partajarea fișierelor. Exemple: NFS, SMB, NAS și servere de fișiere.
+
+   7.3 Stocare obiecte
+       Cod: storage_object
+       Descriere: Servicii care stochează datele sub formă de obiecte accesibile prin API. Exemple: MinIO și servicii compatibile S3.
+
+   7.4 Backup
+       Cod: storage_backup
+       Descriere: Servicii pentru realizarea și administrarea copiilor de siguranță. Exemple: Veeam Backup, backup de baze de date și backup de fișiere.
+
+   7.5 Replicarea datelor
+       Cod: storage_replication
+       Descriere: Servicii pentru copierea automată a datelor între sisteme, medii sau locații diferite.
+
+   7.6 Recuperare în caz de dezastru
+       Cod: storage_disaster_recovery
+       Descriere: Servicii și proceduri pentru restaurarea sistemelor după incidente majore sau indisponibilitatea unei locații.
+
+   7.7 Arhivare pe termen lung
+       Cod: storage_archive
+       Descriere: Servicii pentru păstrarea datelor pe perioade lungi, conform cerințelor legale, operaționale sau de audit.
+
+
+8. Rețea și conectivitate
+   Cod domeniu: net
+   Descriere: Servicii care asigură comunicația dintre utilizatori, sisteme, aplicații și rețele. Exemple: DNS, DHCP, VPN, proxy, rutare și switching.
+
+   8.1 DNS
+       Cod: net_dns
+       Descriere: Servicii pentru rezolvarea numelor de domeniu în adrese IP și a adreselor IP în nume.
+
+   8.2 DHCP și IPAM
+       Cod: net_dhcp_ipam
+       Descriere: Servicii pentru alocarea adreselor IP și administrarea spațiului de adresare. Exemple: DHCP, IPAM și managementul subnetelor.
+
+   8.3 Reverse proxy
+       Cod: net_reverse_proxy
+       Descriere: Servicii care publică și intermediază accesul către aplicațiile web din rețeaua internă. Exemple: Nginx, Apache și HAProxy.
+
+   8.4 Load balancing
+       Cod: net_load_balancing
+       Descriere: Servicii care distribuie traficul între mai multe instanțe ale unei aplicații. Exemple: HAProxy, Nginx și load balancere dedicate.
+
+   8.5 Acces securizat și VPN
+       Cod: net_secure_access
+       Descriere: Servicii pentru acces securizat la rețele și sisteme de la distanță. Exemple: VPN, bastion host și acces remote.
+
+   8.6 Rutare și switching
+       Cod: net_routing_switching
+       Descriere: Servicii care asigură transportul traficului între segmente și rețele. Exemple: routere, switch-uri, VLAN-uri și protocoale de rutare.
+
+   8.7 Managementul rețelei
+       Cod: net_management
+       Descriere: Servicii pentru administrarea configurațiilor, parametrilor și funcționării echipamentelor de rețea.
+
+   8.8 Inventarul rețelei
+       Cod: net_inventory
+       Descriere: Servicii pentru evidența echipamentelor, adreselor, conexiunilor și topologiei de rețea. Exemplu: NetBox.
+
+   8.9 Proxy pentru acces extern
+       Cod: net_forward_proxy
+       Descriere: Servicii care controlează și intermediază accesul utilizatorilor sau serverelor către internet. Exemple: Squid și proxy corporativ.
+
+
+9. Identitate și acces
+   Cod domeniu: iam
+   Descriere: Servicii pentru administrarea identităților, autentificarea utilizatorilor și controlul accesului. Exemple: Active Directory, OpenLDAP, Keycloak, Vault și SSSD.
+
+   9.1 Active Directory
+       Cod: iam_active_directory
+       Descriere: Servicii Microsoft pentru administrarea utilizatorilor, calculatoarelor, grupurilor, domeniilor și politicilor de securitate.
+
+   9.2 LDAP și servicii de director
+       Cod: iam_ldap
+       Descriere: Servicii de director pentru stocarea și interogarea identităților și grupurilor. Exemple: OpenLDAP și 389 Directory Server.
+
+   9.3 Single Sign-On și federare
+       Cod: iam_sso
+       Descriere: Servicii care permit autentificarea unică și integrarea identității între aplicații. Exemple: Keycloak, OIDC, SAML și Kerberos.
+
+   9.4 Autentificare multifactor
+       Cod: iam_mfa
+       Descriere: Servicii care solicită utilizatorului mai multe metode de verificare la autentificare. Exemple: TOTP, tokenuri hardware și notificări mobile.
+
+   9.5 Managementul accesului privilegiat
+       Cod: iam_pam
+       Descriere: Servicii pentru controlul, auditarea și protejarea conturilor cu drepturi administrative sau privilegiate.
+
+   9.6 Managementul secretelor
+       Cod: iam_secrets
+       Descriere: Servicii pentru stocarea și distribuirea securizată a parolelor, tokenurilor și certificatelor. Exemplu: HashiCorp Vault.
+
+   9.7 Managementul ciclului de viață al identităților
+       Cod: iam_lifecycle
+       Descriere: Servicii pentru crearea, modificarea, suspendarea și ștergerea conturilor pe durata activității utilizatorilor.
+
+   9.8 Controlul accesului și autorizare
+       Cod: iam_authorization
+       Descriere: Servicii pentru atribuirea și verificarea rolurilor, grupurilor și permisiunilor utilizatorilor.
+
+
+10. Securitate cibernetică
+    Cod domeniu: sec
+    Descriere: Servicii pentru protejarea sistemelor, aplicațiilor, identităților și datelor împotriva amenințărilor cibernetice.
+
+    10.1 Operațiuni de securitate și SOC
+         Cod: sec_operations
+         Descriere: Servicii pentru supravegherea continuă a securității și coordonarea activităților centrului operațional de securitate.
+
+    10.2 SIEM și analiza evenimentelor
+         Cod: sec_siem
+         Descriere: Servicii pentru colectarea, corelarea și analiza evenimentelor de securitate. Exemple: Graylog, Wazuh, Splunk și Microsoft Sentinel.
+
+    10.3 Protecția stațiilor și serverelor
+         Cod: sec_endpoint
+         Descriere: Servicii pentru protejarea stațiilor și serverelor împotriva programelor malițioase și atacurilor. Exemple: antivirus, EDR și XDR.
+
+    10.4 Managementul vulnerabilităților
+         Cod: sec_vulnerability
+         Descriere: Servicii pentru identificarea, evaluarea, prioritizarea și remedierea vulnerabilităților. Exemple: OpenVAS și Nessus.
+
+    10.5 Firewall și securitatea rețelei
+         Cod: sec_network
+         Descriere: Servicii pentru filtrarea și controlul traficului de rețea. Exemple: FortiGate, firewall intern, IDS și IPS.
+
+    10.6 Securitatea aplicațiilor
+         Cod: sec_application
+         Descriere: Servicii pentru identificarea și reducerea riscurilor din aplicații. Exemple: SAST, DAST, WAF și analiza dependențelor.
+
+    10.7 Securitatea serviciilor de e-mail
+         Cod: sec_email
+         Descriere: Servicii pentru protejarea e-mailului împotriva spamului, programelor malițioase, phishingului și falsificării expeditorului.
+
+    10.8 Certificate digitale și PKI
+         Cod: sec_pki
+         Descriere: Servicii pentru emiterea, gestionarea, validarea și revocarea certificatelor digitale. Exemple: autorități de certificare și servicii PKI.
+
+    10.9 Audit și conformitate
+         Cod: sec_audit
+         Descriere: Servicii pentru colectarea dovezilor, verificarea controalelor și respectarea politicilor sau standardelor de securitate.
+
+    10.10 Răspuns la incidente
+          Cod: sec_incident_response
+          Descriere: Servicii pentru identificarea, izolarea, investigarea și remedierea incidentelor de securitate.
+
+
+11. Observabilitate și monitorizare
+    Cod domeniu: obs
+    Descriere: Servicii pentru urmărirea disponibilității, performanței, logurilor și comportamentului sistemelor. Exemple: Prometheus, Grafana, Graylog, LibreNMS și Sentry.
+
+    11.1 Monitorizarea infrastructurii
+         Cod: obs_infrastructure
+         Descriere: Monitorizarea serverelor, mașinilor virtuale, resurselor hardware și serviciilor de sistem. Exemple: Prometheus, Zabbix și Netdata.
+
+    11.2 Monitorizarea rețelei
+         Cod: obs_network
+         Descriere: Monitorizarea echipamentelor, interfețelor, traficului și disponibilității rețelei. Exemple: LibreNMS și Zabbix.
+
+    11.3 Monitorizarea aplicațiilor
+         Cod: obs_application
+         Descriere: Monitorizarea performanței, erorilor și disponibilității aplicațiilor. Exemple: Sentry, APM și verificări de stare.
+
+    11.4 Managementul logurilor
+         Cod: obs_logs
+         Descriere: Colectarea, centralizarea, căutarea și păstrarea logurilor. Exemple: Graylog, OpenSearch, Filebeat și Logstash.
+
+    11.5 Colectarea și analiza metricilor
+         Cod: obs_metrics
+         Descriere: Servicii pentru colectarea și analiza valorilor numerice privind starea sistemelor. Exemple: Prometheus și Grafana.
+
+    11.6 Tracing distribuit
+         Cod: obs_tracing
+         Descriere: Servicii pentru urmărirea unei cereri prin mai multe aplicații și componente distribuite. Exemple: Jaeger și OpenTelemetry.
+
+    11.7 Alertare și notificare
+         Cod: obs_alerting
+         Descriere: Servicii pentru generarea și transmiterea alertelor atunci când apar probleme sau sunt depășite anumite praguri.
+
+    11.8 Monitorizare sintetică și disponibilitate
+         Cod: obs_synthetic
+         Descriere: Servicii care testează periodic accesibilitatea aplicațiilor și simulează acțiuni ale utilizatorilor.
+
+
+12. Mesagerie și colaborare
+    Cod domeniu: collab
+    Descriere: Servicii pentru comunicare, e-mail, colaborare, conferințe și partajarea informațiilor. Exemple: Postfix, Roundcube, SOGo, Rocket.Chat și Nextcloud.
+
+    12.1 Poștă electronică
+         Cod: collab_mail
+         Descriere: Servicii pentru transmiterea, primirea, stocarea și accesarea mesajelor e-mail. Exemple: Postfix, Dovecot, Roundcube și SOGo.
+
+    12.2 Mesagerie instant și chat
+         Cod: collab_chat
+         Descriere: Servicii pentru comunicare în timp real între utilizatori și echipe. Exemple: Rocket.Chat, Mattermost și Microsoft Teams.
+
+    12.3 Partajare fișiere
+         Cod: collab_file_sharing
+         Descriere: Servicii pentru stocarea, sincronizarea și partajarea fișierelor între utilizatori. Exemplu: Nextcloud.
+
+    12.4 Portaluri de colaborare
+         Cod: collab_portals
+         Descriere: Platforme care centralizează informații, documente, grupuri și spații de lucru. Exemple: eXo Platform și portaluri intranet.
+
+    12.5 Conferințe audio-video
+         Cod: collab_conferencing
+         Descriere: Servicii pentru întâlniri online, comunicații audio-video și partajarea ecranului.
+
+    12.6 Calendar și contacte
+         Cod: collab_calendar
+         Descriere: Servicii pentru programări, calendare partajate, agende și contacte. Exemple: SOGo, CalDAV și CardDAV.
+
+    12.7 Notificări și mesaje automate
+         Cod: collab_notifications
+         Descriere: Servicii pentru transmiterea automată de notificări prin e-mail, SMS, chat sau alte canale.
+
+
+13. Documente și cunoștințe
+    Cod domeniu: doc
+    Descriere: Servicii pentru gestionarea documentelor, arhivare, fluxuri de aprobare și baze de cunoștințe. Exemple: Alfresco, OnlyOffice și arhivă electronică.
+
+    13.1 Managementul documentelor
+         Cod: doc_management
+         Descriere: Servicii pentru stocarea, organizarea, versionarea și accesarea documentelor. Exemplu: Alfresco.
+
+    13.2 Arhivare electronică
+         Cod: doc_archive
+         Descriere: Servicii pentru păstrarea pe termen lung a documentelor electronice și respectarea perioadelor de retenție.
+
+    13.3 Bază de cunoștințe
+         Cod: doc_knowledge_base
+         Descriere: Servicii pentru organizarea documentației, procedurilor, instrucțiunilor și soluțiilor reutilizabile.
+
+    13.4 Fluxuri documentare și aprobare
+         Cod: doc_workflows
+         Descriere: Servicii pentru circulația, verificarea și aprobarea documentelor între utilizatori și compartimente.
+
+    13.5 Semnare electronică
+         Cod: doc_digital_signature
+         Descriere: Servicii pentru aplicarea și verificarea semnăturilor electronice pe documente.
+
+    13.6 Managementul înregistrărilor
+         Cod: doc_records
+         Descriere: Servicii pentru clasificarea, retenția, arhivarea și eliminarea controlată a înregistrărilor oficiale.
+
+    13.7 Conversie și previzualizare documente
+         Cod: doc_conversion
+         Descriere: Servicii pentru transformarea documentelor între formate și generarea previzualizărilor. Exemple: OnlyOffice și conversie PDF.
+
+
+14. GIS și servicii geospațiale
+    Cod domeniu: gis
+    Descriere: Servicii pentru administrarea, procesarea și publicarea datelor geografice. Exemple: GeoServer, GeoNetwork, PostGIS și portaluri GIS.
+
+    14.1 Publicare hărți și servicii geospațiale
+         Cod: gis_map_services
+         Descriere: Servicii pentru publicarea hărților și datelor geografice prin protocoale standard. Exemple: GeoServer, WMS, WFS și WMTS.
+
+    14.2 Catalog de metadate
+         Cod: gis_metadata
+         Descriere: Servicii pentru descrierea, catalogarea și căutarea seturilor de date geospațiale. Exemplu: GeoNetwork.
+
+    14.3 Baze de date spațiale
+         Cod: gis_spatial_database
+         Descriere: Servicii pentru stocarea și interogarea datelor geografice. Exemplu: PostgreSQL cu PostGIS.
+
+    14.4 Geoprocesare
+         Cod: gis_geoprocessing
+         Descriere: Servicii pentru analiza, conversia și prelucrarea automată a datelor geografice.
+
+    14.5 Geocodare și localizare
+         Cod: gis_geocoding
+         Descriere: Servicii pentru transformarea adreselor în coordonate geografice și identificarea locațiilor.
+
+    14.6 Managementul datelor geospațiale
+         Cod: gis_data_management
+         Descriere: Servicii pentru importul, actualizarea, validarea și administrarea seturilor de date geografice.
+
+    14.7 Aplicații și portaluri GIS
+         Cod: gis_applications
+         Descriere: Aplicații care permit vizualizarea, consultarea și utilizarea interactivă a hărților și informațiilor geografice.
+
+
+15. Managementul serviciilor și activelor IT
+    Cod domeniu: itsm
+    Descriere: Servicii pentru administrarea incidentelor, cererilor, activelor, configurațiilor și catalogului de servicii IT. Exemple: GLPI și OTOBO.
+
+    15.1 Service Desk
+         Cod: itsm_service_desk
+         Descriere: Punct central de contact pentru utilizatori și pentru înregistrarea problemelor, incidentelor sau solicitărilor.
+
+    15.2 Managementul incidentelor
+         Cod: itsm_incident
+         Descriere: Servicii pentru înregistrarea, clasificarea, investigarea și rezolvarea incidentelor IT.
+
+    15.3 Managementul cererilor
+         Cod: itsm_request
+         Descriere: Servicii pentru gestionarea solicitărilor standard adresate departamentului IT.
+
+    15.4 Managementul problemelor
+         Cod: itsm_problem
+         Descriere: Servicii pentru identificarea și eliminarea cauzelor recurente ale incidentelor.
+
+    15.5 Managementul schimbărilor și versiunilor
+         Cod: itsm_change_release
+         Descriere: Servicii pentru planificarea, aprobarea și implementarea controlată a schimbărilor și versiunilor.
+
+    15.6 Managementul activelor IT
+         Cod: itsm_assets
+         Descriere: Servicii pentru evidența și administrarea echipamentelor, licențelor și altor active IT.
+
+    15.7 CMDB și managementul configurațiilor
+         Cod: itsm_cmdb
+         Descriere: Servicii pentru evidența elementelor de configurație și a relațiilor dintre acestea.
+
+    15.8 Inventar hardware și software
+         Cod: itsm_inventory
+         Descriere: Servicii pentru colectarea automată sau manuală a informațiilor despre echipamente și aplicațiile instalate. Exemple: GLPI Agent și SCCM.
+
+    15.9 Catalog de servicii și SLA
+         Cod: itsm_service_catalog
+         Descriere: Servicii pentru definirea serviciilor oferite, responsabilităților, programului de funcționare și nivelurilor de servicii asumate.
+
+    15.10 Managementul licențelor
+          Cod: itsm_licenses
+          Descriere: Servicii pentru evidența, alocarea, urmărirea și verificarea licențelor software.
+
+
+16. Securitate fizică
+    Cod domeniu: phy
+    Descriere: Servicii pentru protejarea locațiilor, controlul accesului și monitorizarea evenimentelor fizice.
+
+    16.1 Control acces
+         Cod: phy_access_control
+         Descriere: Servicii pentru autorizarea și înregistrarea accesului persoanelor în spații protejate.
+
+    16.2 Supraveghere video
+         Cod: phy_video_surveillance
+         Descriere: Servicii pentru captarea, înregistrarea și vizualizarea imaginilor video de securitate.
+
+    16.3 Detecție antiefracție
+         Cod: phy_intrusion_detection
+         Descriere: Servicii pentru detectarea accesului neautorizat și generarea alarmelor.
+
+    16.4 Detecție incendiu și PSI
+         Cod: phy_fire_safety
+         Descriere: Servicii pentru detectarea incendiilor și monitorizarea instalațiilor de prevenire și stingere.
+
+    16.5 Managementul vizitatorilor
+         Cod: phy_visitor_management
+         Descriere: Servicii pentru înregistrarea, aprobarea și urmărirea accesului vizitatorilor.
+
+    16.6 Pontaj și evidența accesului
+         Cod: phy_time_attendance
+         Descriere: Servicii pentru înregistrarea programului de lucru și a intrărilor și ieșirilor personalului.
+
+    16.7 Monitorizarea sistemelor de securitate fizică
+         Cod: phy_monitoring
+         Descriere: Servicii pentru monitorizarea centralizată a alarmelor, camerelor și echipamentelor de securitate fizică.
+
+
+17. Rețea radio
+    Cod domeniu: rad
+    Descriere: Servicii pentru operarea, planificarea și administrarea comunicațiilor radio. Exemple: Atoll, sisteme radio și platforme de dispecerizare.
+
+    17.1 Comunicații radio
+         Cod: rad_communications
+         Descriere: Servicii care asigură transmiterea comunicațiilor de voce sau date prin infrastructura radio.
+
+    17.2 Managementul rețelei radio
+         Cod: rad_network_management
+         Descriere: Servicii pentru administrarea configurațiilor, parametrilor și componentelor rețelei radio.
+
+    17.3 Planificare radio și frecvențe
+         Cod: rad_planning
+         Descriere: Servicii pentru proiectarea acoperirii radio, planificarea frecvențelor și analiza interferențelor. Exemplu: Atoll.
+
+    17.4 Monitorizarea rețelei radio
+         Cod: rad_monitoring
+         Descriere: Servicii pentru urmărirea disponibilității, performanței și alarmelor echipamentelor radio.
+
+    17.5 Inventarul echipamentelor radio
+         Cod: rad_inventory
+         Descriere: Servicii pentru evidența stațiilor, antenelor, frecvențelor și altor componente ale rețelei radio.
+
+    17.6 Dispecerizare și comunicații de voce
+         Cod: rad_dispatch
+         Descriere: Servicii pentru coordonarea comunicațiilor radio și gestionarea apelurilor de către dispeceri.
+
+
+999. Necategorizat
+     Cod domeniu: uncategorized
+     Descriere: Domeniu tehnic temporar utilizat pentru elementele migrate care nu au asociat un domeniu valid. Nu trebuie să fie selectabil manual.
+
+     999.1 Necategorizat
+           Cod: uncategorized_default
+           Descriere: Categorie tehnică temporară pentru serviciile care nu au putut fi încadrate automat într-o categorie validă.
