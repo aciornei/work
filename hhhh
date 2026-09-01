@@ -1,0 +1,12 @@
+| Cod        | Denumire               | Utilizare                                                   |
+| ---------- | ---------------------- | ----------------------------------------------------------- |
+| `PROD`     | Producție              | Sisteme folosite în activitatea reală                       |
+| `PREPROD`  | Preproducție           | Mediu cât mai apropiat de producție, pentru validare finală |
+| `TEST`     | Test                   | Teste funcționale și tehnice                                |
+| `DEV`      | Dezvoltare             | Dezvoltare și configurare                                   |
+| `QA`       | Calitate / QA          | Testare formală și acceptanță tehnică                       |
+| `UAT`      | Acceptanță utilizatori | Validare de către utilizatorii finali                       |
+| `DR`       | Disaster Recovery      | Instanțe sau resurse pentru recuperare în caz de dezastru   |
+| `TRAINING` | Instruire              | Cursuri, demonstrații și instruirea utilizatorilor          |
+| `SANDBOX`  | Sandbox                | Experimente fără impact asupra mediilor controlate          |
+| `LAB`      | Laborator              | Teste de infrastructură, concepte și tehnologii noi         |
