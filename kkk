@@ -1,0 +1,5 @@
+sudo journalctl \
+  -u vm-doc-server \
+  --since "5 minutes ago" \
+  --no-pager \
+  | grep -A2 -B2 "VM detail optional data"
