@@ -1,3 +1,0 @@
-sed -i \
-'s/len(rows\[0\]) != 18 || len(rows\[1\]) != 18/len(rows[0]) != 19 || len(rows[1]) != 19/' \
-internal/server/server_test.go

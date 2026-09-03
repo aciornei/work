@@ -1,0 +1,8 @@
+CREATE USER 'navicat'@'192.168.1.50'
+IDENTIFIED BY 'ParolaFoartePuternica!';
+
+GRANT SELECT, SHOW VIEW
+ON vm_doc.*
+TO 'navicat'@'192.168.1.50';
+
+FLUSH PRIVILEGES;
